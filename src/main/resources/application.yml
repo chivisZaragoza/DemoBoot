@@ -1,9 +1,17 @@
 spring:
-  application:
-    name: demoBoot
-  datasource:     
-    url: jdbc:mysql://localhost:3306/bootangular?serverTimezone=UTC&useLegacyDatetimeCode=false    name: root
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/jsp/
+#      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://localhost:3306/bootangular?serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:    database-platform: org.hibernate.dialect.MySQL5Dialect
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
     show-sql: true
-    hibernate:      ddl-auto: update
+    hibernate: 
+      ddl-auto: update
+      
+server:
+  port: 8083
