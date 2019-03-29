@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: demoBoot
+  datasource:     
+    url: jdbc:mysql://localhost:3306/bootangular?serverTimezone=UTC&useLegacyDatetimeCode=false    name: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate:      ddl-auto: update
